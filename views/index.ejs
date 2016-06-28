@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>check YouTube playlist</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="javascripts/dataManager.js"></script>
+<script src="javascripts/utils.js"></script>
+<link href="stylesheets/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+insert playlist id: <input id="txtPlaylistId" type="text"  style="width:300px;"/>
+<br /> <br />
+max item in result: <input id="txtMaxResult" type="text" value="30"/>
+<br /> <br />
+<input id="bunGetPlaylist" type="button" value="get playlist items" onclick="getPlaylist()" />
+<br /> <br />
+<label id="lblPleaseWait" style="color:red">  </label>
+<br /> <br />
+
+
+
+
+insert video id: <input id="txtVideoId" type="text"  style="width:300px;"/>
+<br /> <br />
+<input id="btnGetItemStatus" type="button" value="get item status" onclick="getItemStatus()" />
+<br /> <br />
+<label id="lblItemStatus">  </label>
+<br /> <br />
+<label id="lblItemReason" dir="rtl">  </label>
+
+
+<div dir="rtl">
+<table id="myTable" >
+
+</table>
+</div>
+
+</body>
+</html>
